@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	const FROM int32 = 10000000
-	const TO int32 = 10001000
+	const FROM int32 = 100000000
+	const TO int32 = 100010000
 	var limit int32 = int32(math.Sqrt(float64(TO)))
 	var a [TO - FROM]int8
 
@@ -25,11 +25,11 @@ func main() {
 
 	var elapsed = time.Now().UnixMilli() - start
 
-	for n := FROM; n < TO; n++ {
-		if a[n-FROM] == 0 {
-			fmt.Println(n)
-		}
-	}
+	// for n := FROM; n < TO; n++ {
+	// 	if a[n-FROM] == 0 {
+	// 		fmt.Println(n)
+	// 	}
+	// }
 
 	fmt.Println("time = ", elapsed)
 }
