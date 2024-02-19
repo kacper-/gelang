@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	const FROM int32 = 100000000
-	const TO int32 = 100010000
+	const FROM int32 = 1000000000
+	const TO int32 = 1000100000
 	var limit int32 = int32(math.Sqrt(float64(TO)))
 	var a [TO - FROM]int8
 
