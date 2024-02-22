@@ -25,11 +25,11 @@ func main() {
 
 	var elapsed = time.Now().UnixMilli() - start
 
-	// for n := FROM; n < TO; n++ {
-	// 	if a[n-FROM] == 0 {
-	// 		fmt.Println(n)
-	// 	}
-	// }
+	for n := FROM; n < TO; n++ {
+		if a[n-FROM] == 0 {
+			fmt.Println(n)
+		}
+	}
 
 	fmt.Println("time = ", elapsed)
 }
