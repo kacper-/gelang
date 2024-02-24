@@ -28,9 +28,9 @@ func dist(idx []int, points []Points) (sum float64) {
 }
 
 func main() {
-	idx := [9]int{0, 1, 2, 3, 4, 5, 6, 7, 8}
+	idx := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
-	points := [9]Points{
+	points := []Points{
 		Points{1, 1},
 		Points{2, 1},
 		Points{1, 2},
@@ -40,6 +40,9 @@ func main() {
 		Points{3, 4},
 		Points{4, 4},
 		Points{2, 4},
+		Points{3, 0},
+		Points{4, 1},
+		Points{2, 3},
 	}
 
 	min := dist(idx[:], points[:])
